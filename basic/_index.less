@@ -1,0 +1,33 @@
+html,body,#main{
+    height:100%;
+    padding:0;
+    margin:0;
+    font-size:12px;
+}
+*{
+    box-sizing: border-box;
+}
+.studio{
+    background:#474e5c;
+    height: 100%;
+    .workbench{
+        height:100%;
+        &>div{
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            &>.x-tabs-header{
+                background-color:#0a1325 ;
+                &>.x-tabs-header-item{
+                    color:#fff;
+                }
+            }
+            &>.x-tabs-item{
+                flex:1;
+                &>div{
+                    height:100%;
+                }
+            }
+        }
+    }
+}
